@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-PyMongo
+Flask-Cors
+pymysql
+python-dotenv
+pytz
