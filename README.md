@@ -17,24 +17,6 @@
    ```sh
    flask run
    ```
-
-## Frontend Setup
-
-1. Navigate to the `frontend` directory:
-   ```sh
-   cd frontend
-   ```
-
-2. Install the dependencies:
-   ```sh
-   npm install
-   ```
-
-3. Start the React app:
-   ```sh
-   npm start
-   ```
-
 ## Usage
 
 - The backend will be running on `http://localhost:5000`.
@@ -57,4 +39,4 @@ You can now use the User Management System to add and view users.
 
 ## Database Integration Process
 
-The backend uses Flask with SQLAlchemy for MySQL database integration and PyMongo for MongoDB logging. The frontend is built with React and uses Axios for API calls.
+The backend uses Flask with SQLAlchemy for MySQL database integration and PyMongo for MongoDB logging.
