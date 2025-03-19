@@ -4,12 +4,12 @@ from flask_pymongo import PyMongo
 from flask_cors import CORS
 from datetime import datetime, timedelta
 import os
+from config import Config
 
 app = Flask(__name__)
 CORS(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("MYSQL_URI", "mysql+pymysql://root:Root#04@localhost/user_management")
-app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/api_logs")
+app.config.from_object(Config)
 
 db = SQLAlchemy(app)
 mongo = PyMongo(app)
